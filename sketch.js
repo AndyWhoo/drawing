@@ -4,7 +4,7 @@
 
 
 function setup() {
-  createCanvas(400, 400);
+  createCanvas(400,400);
 
   background(0, 0, 0);
   //fill(0, 45, 250);
@@ -21,10 +21,11 @@ strokeWeight(20);
     line(mouseX, mouseY, pmouseX, pmouseY);
 
     stroke(map(mouseX, 0, 0, 255, 0, true), map(mouseX, 100,400 ,255 , 255, true) )
-    strokeWeight(110);
+    strokeWeight(130);
+
+line(mouseX*5,mouseY,pmouseX *5, pmouseY );
 
 line(height - mouseX, width - mouseY, height - pmouseX, width - pmouseY);
-//line( height-mouseX, mouseY, width- pmouseX, pmouseY);
 
     stroke(255);
 
