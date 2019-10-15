@@ -20,7 +20,7 @@ function draw() {
 strokeWeight(20);
     line(mouseX, mouseY, pmouseX, pmouseY);
 
-    stroke(map(mouseX, 0, 0, 255, 0, true), map(mouseX, 100,400 ,255 , 255, true) )
+    stroke(map(mouseX, 0, 0, 255, 0, true), map(mouseX, 100,600 ,400 , 400, true) )
     strokeWeight(160);
 
 line(mouseX*5,mouseY,pmouseX *5, pmouseY );
