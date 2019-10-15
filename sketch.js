@@ -1,29 +1,30 @@
-let noiseOffset = 0.0;
-let strokeWidth = 3;
+//let noiseOffset = 0.0;
+//let strokeWidth = 10;
+
 
 
 function setup() {
-  createCanvas(500, 500);
+  createCanvas(400, 400);
 
   background(0, 0, 0);
-  fill(0,45,250);
+  //fill(0, 45, 250);
 
 }
 
 function draw() {
-  strokeWeight(strokeWidth);
- noiseOffset += 0.01;
-  strokeWidth = noise(noiseOffset) * 30;
+  //strokeWeight(strokeWidth);
+  //noiseOffset += 0.5;
+  //strokeWidth = noise(noiseOffset) * 30;
   if (mouseIsPressed) {
+//strokeWeight(10);
+strokeWeight(10);
+    line(mouseX, mouseY, pmouseX, pmouseY);
 
-  line( mouseX, mouseY, pmouseX, pmouseY);
+    stroke(map(mouseX, 0, 0, 255, 0, true), map(mouseX, 100,600 ,255 , 255, true) )
+    strokeWeight(150);
 
-    stroke(map(mouseX, 50, 200, 45, 0, true), map(mouseX, 100,600 ,200 , 255, true))
-
-
-    line( height-mouseX,width- mouseY,height- pmouseX, width-pmouseY);
-
-    stroke(200,150,50);
+line(height - mouseX, width - mouseY, height - pmouseX, width - pmouseY,100);
+    stroke(255);
 
 
 
@@ -38,6 +39,10 @@ function keyTyped() {
 
   if (key === 's') {
     saveCanvas('fileName', 'png')
+  }
+
+  if (key === 'd') {
+    background(0, 0, 0);
   }
   return false;
 
