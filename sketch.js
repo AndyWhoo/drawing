@@ -21,7 +21,7 @@ strokeWeight(20);
     line(mouseX, mouseY, pmouseX, pmouseY);
 
     stroke(map(mouseX, 0, 0, 255, 0, true), map(mouseX, 100,400 ,255 , 255, true) )
-    strokeWeight(130);
+    strokeWeight(160);
 
 line(mouseX*5,mouseY,pmouseX *5, pmouseY );
 
