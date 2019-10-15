@@ -17,13 +17,15 @@ function draw() {
   //strokeWidth = noise(noiseOffset) * 30;
   if (mouseIsPressed) {
 //strokeWeight(10);
-strokeWeight(10);
+strokeWeight(20);
     line(mouseX, mouseY, pmouseX, pmouseY);
 
-    stroke(map(mouseX, 0, 0, 255, 0, true), map(mouseX, 100,600 ,255 , 255, true) )
-    strokeWeight(150);
+    stroke(map(mouseX, 0, 0, 255, 0, true), map(mouseX, 100,400 ,255 , 255, true) )
+    strokeWeight(110);
 
-line(height - mouseX, width - mouseY, height - pmouseX, width - pmouseY,100);
+line(height - mouseX, width - mouseY, height - pmouseX, width - pmouseY);
+//line( height-mouseX, mouseY, width- pmouseX, pmouseY);
+
     stroke(255);
 
 
